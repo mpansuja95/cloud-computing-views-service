@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - name: views-service-container
-        image: mpansuja/cloud-computing-images:views.0.0.5
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
+        imagePullPolicy: Always
         ports:
         - containerPort: 8090
