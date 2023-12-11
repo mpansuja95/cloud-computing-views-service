@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "deductive-cider-407703",
+  "private_key_id": "879c8524d34367f7d2a1bcc831e7586ad6b5fd86",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDn1NCiXvLjBUrZ\ne09oubOUq01Z6kECSbgG65+/Nmju+ZHJTGKH1E0yIy/EGxxx9eo5AfInvxguYJCv\n29zoZRXqFuSvE4E+t1a3NFoDjpfFpv0tsj3sQ9/UtVLaCzPBgl0AryR4DRNztjz2\n+0sF/j1P+4lhdr3UNXkJFBqohHPJJw5AYjOQGpyFxjyu7WwNuc6tQzctJZ1GNmzv\nAhTmeMse/WvPp6ugc0vNWxwR2LCexUjDuj35wp+/41jDHn/p/tXBB2w8zJy/lwNK\nXzxbawmuzV62zxBprLtlm6t3mYM3LKoni53b+6O7ydzx0y1XC9wwXZnQoeJe+5QY\nwWSeX0VhAgMBAAECggEAEDnh/Gte3qrhKUWrMi5FNnOi71cpA6r7OWjGfpClWYyY\nOpmhD9a5LHgwAK7RF9zZbvIG6+dBHwXdOqHN3Wot1XuSt/pKgoQ8iogcgME7ODdO\n4yLlmKLLiMzEJsS/85xXPBQGHmzz3pZzv+mov5ui2PVHEU5JTRAND6ibkQ3sOLjj\n77FHrhf8PMg5ZSdtu8kmeEgfVfYwH9wuO84PK8u/mOPJs9k6agdzHNod0q83b3hU\nikiKF7ciVM4LqcoUIuqHjYuTB/5JzWtlFp7KEfLunBZ3vc3ummm55qcX3AFPLyiW\nXLKBusoqFHOVorUTCoj0iovNgIRE4bwExvN2vMLdrQKBgQD/Sec2YSJ9B/AdTk0h\nFS6Rgpv2VxKflpXmeuiCJGEZoAh1OtqKQ1czpneCyRwqlK2EyPG5C7o19hpaXyk3\nJZa4jFpLRMVZAT/FngRspDZpIayGJG8p082DnHhG83ZxRRjB9ZKEVzLqB/qgN4Us\nsXpCFCbbsmwscL70sDeZe2uYpwKBgQDoei4BoJ3qbeejEVSCYM2jcSn7PJFW+qyh\nd2BXcLnpKJj0l6bGNjfEpLpDA1zNjKUv8AHtOWtckI8XvMQer9TchJbFzLO6hfY3\nB/IS0FHla2owkZyLGACTIBckRgLbcvSf2YWMo1FpPvZa55Usl0gYmm/HFegrIZZk\na0JuFsBqtwKBgFt+YR9cMMAe2C+ooHv623XLGZpwGnyXu6Ge6zW5VBObB2z8atai\ny933C14UNcQNBSNR4VAwo8wzJ7673Emnbx01MCdJvnDnwbNRrsRBFj8Xkn2BEVYs\nUruYmILVPt3ZpcXd/WTw246EzY4eV9xsvyRvlH2otJw4zDdl8IdRdH6BAoGAWwI5\nsHloWLXd0ICgTMoItss+XBRB8YMAwdUx6gk/Pn+eIWKc70uaWWkDYeiXFADTSgjz\nOCMaXIpa+jfzru+2rP1a6ORSF9sJoFGD+smCxgVe9NSMLAehcfdGF/UweShvi4Rk\nO8JTxJfZaYzvYR14I+mRiKaS1Q+5CGbVArP1b9ECgYEAyJlA9PNCSw4QB4peJdAv\nWOnDO8BIS1w1+W04TEcoEEaHaOpAt0v4VIrKmFt+byau6Lxi8+6vaEozeif9+Vl4\n6YvnuK0HapKlrP5ewCqzNvvKf3tEQtU/+VpLViT12bPXDxEVHP4327gXKS5Vyul+\n7Y1h1XgFzUGnCdqD3vYyBJ4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-computing-sa@deductive-cider-407703.iam.gserviceaccount.com",
+  "client_id": "101997243887279200503",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-computing-sa%40deductive-cider-407703.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

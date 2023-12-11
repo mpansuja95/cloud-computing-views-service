@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: views-service-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: views-service
+  template:
+    metadata:
+      labels:
+        app: views-service
+    spec:
+      containers:
+      - name: views-service-container
+        image: mpansuja/cloud-computing-images:views.0.0.5
+        ports:
+        - containerPort: 8090

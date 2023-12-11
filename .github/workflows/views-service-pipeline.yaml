@@ -1,0 +1,37 @@
+name: Build and Deploy views-service to GKE
+on:
+  push:
+    branches:
+      - master
+
+env:
+  PROJECT_ID: ${{secrets.CLOUD_COMPUTING_GKE_PROJECT}}
+  GKE_CLUSTER: cloud-computing-cluster
+  GKE_ZONE: asia-southeast1-b
+  DEPLOYMENT_NAME: views-service-deployment
+  IMAGE: mpansuja95/cloud-computing
+  TAG: 0.0.1
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup Build Publish Deploy views-service
+    runs-on: node:alpine
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Use the provided Docker image to build and push your Node.js application
+      - name: Build Views Service Image
+        run: |
+          docker build -t ${{ env.IMAGE }}:${{ env.TAG }} .
+          docker push ${{ env.IMAGE }}:${{ env.TAG }}
+
+      # Add deployment steps based on your deployment strategy
+
+      # Example GKE deployment step:
+      - name: Deploy to GKE
+        run: |
+          gcloud container clusters get-credentials ${{ env.GKE_CLUSTER }} --zone ${{ env.GKE_ZONE }} --project ${{ env.PROJECT_ID }}
+          kubectl apply -f your-kubernetes-deployment-file.yaml
