@@ -14,7 +14,17 @@ spec:
     spec:
       containers:
       - name: views-service-container
-        image: gcr.io/PROJECT_ID/IMAGE:TAG
-        imagePullPolicy: Always
+        image: mpansuja/cloud-computing-images:views.0.2.0
         ports:
         - containerPort: 8090
+        env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            valueFrom:
+              secretKeyRef:
+                name: cloud-computing-secret
+                key: deductive-cider-407703-sa.json
+          - name: PROJECT_ID
+            valueFrom:
+              secretKeyRef:
+                name: cloud-computing-secret
+                key: project-id.json

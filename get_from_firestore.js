@@ -1,10 +1,15 @@
+require('dotenv').config();
 const admin = require('firebase-admin');
 
 // Replace 'path/to/your/serviceAccountKey.json' with the actual path to your service account key JSON file
-const serviceAccount = require('./deductive-cider-407703-879c8524d343.json');
+// const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+// const serviceAccount = require('./deductive-cider-407703-879c8524d343.json');
 
 // Replace 'your-project-id' with your actual Firebase project ID
-const projectId = 'deductive-cider-407703';
+// const projectId = 'deductive-cider-407703';
+const projectId = process.env.PROJECT_ID.projectId;
+// const projectId = process.env.PROJECT_ID;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

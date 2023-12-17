@@ -13,6 +13,9 @@ RUN npm install
 # Install axios
 RUN npm install axios
 
+# Install dotenv
+RUN npm install dotenv
+
 # Install firebase-admin
 RUN npm install firebase-admin
 
