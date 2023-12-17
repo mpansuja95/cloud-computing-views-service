@@ -11,7 +11,7 @@ env:
   GKE_ZONE: asia-southeast1-b
   DEPLOYMENT_NAME: views-service-deployment
   IMAGE: mpansuja95/cloud-computing-views-service
-  TAG: views.0.0.1
+  TAG: views.0.2.1
 
 jobs:
   setup-build-publish-deploy:

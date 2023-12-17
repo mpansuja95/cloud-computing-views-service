@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: views-service-container
-        image: mpansuja/cloud-computing-images:views.0.2.0
+        image: mpansuja/cloud-computing-images:views.0.2.1
         ports:
         - containerPort: 8090
         env:
