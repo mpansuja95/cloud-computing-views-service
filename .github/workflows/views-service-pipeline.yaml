@@ -53,7 +53,27 @@ jobs:
 
       - name: Publish Docker Image to GCR
         run: |-
-          docker push "gcr.io/$PROJECT_ID/$IMAGE:$TAG"   
+          docker push "gcr.io/$PROJECT_ID/$IMAGE:$TAG"  
+
+      - name: Install curl
+        run: sudo apt-get install curl -y
+
+      - name: Install gcloud
+        run: |
+          gcloud components install cloud-sdk
+          gcloud components update
+        env:
+          PATH: /usr/bin:/path/to/curl:/path/to/gcloud/:$PATH
+
+
+      - name: Install and Configure gke-gcloud-auth-plugin
+        run: |
+          curl -s https://storage.googleapis.com/container-plugin-release/releases/gke-gcloud-auth-plugin/latest/gke-gcloud-auth-plugin-linux-amd64.exe -o gke-gcloud-auth-plugin && chmod +x gke-gcloud-auth-plugin && mv gke-gcloud-auth-plugin ~/.local/bin/
+          echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc && source ~/.bashrc
+          gcloud components install gke-gcloud-auth-plugin
+        env:
+          PATH: ~/.local/bin:$PATH
+ 
 
       - name: Set up Kustomize
         run: |-
