@@ -31,6 +31,14 @@ jobs:
       - name: Install Dependencies
         run: npm install  
 
+      - name: Install and Configure gke-gcloud-auth-plugin
+        run: |
+          curl -s https://storage.googleapis.com/container-plugin-release/releases/gke-gcloud-auth-plugin/latest/gke-gcloud-auth-plugin-linux-amd64.exe -o gke-gcloud-auth-plugin && chmod +x gke-gcloud-auth-plugin && mv gke-gcloud-auth-plugin ~/.local/bin/
+          echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc && source ~/.bashrc
+          gcloud components install gke-gcloud-auth-plugin
+        env:
+          PATH: ~/.local/bin:$PATH
+    
       - name: Setup Google CLoud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@0.1.3
         env: 
