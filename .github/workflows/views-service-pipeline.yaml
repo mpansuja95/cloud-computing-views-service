@@ -60,7 +60,7 @@ jobs:
 
       - name: Install gcloud
         run: |
-          gcloud components install cloud-sdk
+          gcloud components install kubectl
           gcloud components update
         env:
           PATH: /usr/bin:/path/to/curl:/path/to/gcloud/:$PATH
